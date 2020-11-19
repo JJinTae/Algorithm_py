@@ -1,6 +1,15 @@
 def solution(n, arr1, arr2):
     answer = []
     
+    for i, j in zip(arr1, arr2):
+        a12 = str(bin(i|j)[2:])
+        a12 = a12.rjust(n, '0')
+        a12 = a12.replace('1', '#')
+        a12 = a12.replace('0', ' ')
+        answer.append(a12)
+    return answer
+    
+    """
     for i in range (n):
         tmp_line1 = decTobin(n, arr1[i])
         tmp_line2 = decTobin(n, arr2[i])
@@ -13,9 +22,10 @@ def solution(n, arr1, arr2):
         answer.append(tmp_str)
     
     return answer
+    """
 
 
-
+"""
 # 10진수를 2진수 #으로 변환하는 함수
 def decTobin(n, num):
     binary = ''
@@ -25,3 +35,4 @@ def decTobin(n, num):
     
     binary += '0'*(n - len(binary))
     return binary[::-1]
+"""
