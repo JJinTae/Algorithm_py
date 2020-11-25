@@ -1,36 +1,26 @@
 from collections import Counter
-import numpy as np
 
 def solution(N, stages):
-    
-    # 스테이지별 도전횟수 index는 스테이지 = index + 1
-    challenges = [0] * (N + 1) # 도전횟수
-    clear = [0] * (N + 1) # 클리어횟수
-    failure = [0] * N # 실패율
-    
-    # 현재 도전중인 stages -> 이전의 stages는 클리어했다.
-    # 실패율 구하는 알고리즘
-    for key, value in Counter(stages).items():
-        for i in range(key):
-            challenges[i] += value
-        for i in range(key-1):
-            clear[i] += value
-        
-    for i in range(len(clear)):
-        if clear[i] != 0:
-            failure[i] = ((challenges[i] - clear[i]) / challenges[i]) + 1
-    
-    
-    
-    
-    print(Counter(stages))
 
-    print('clear : ', clear)
-    print('challenges', challenges)
-    print('failure', failure)
-    
-    
-    
-    answer1 = (-np.array(failure)).argsort()[:N]+1
-    print(answer1)
-    return answer1.tolist()
+    num = len(stages) # 사람 수를 저장
+    failure = [0] * N # 실패율 저장
+    stages = Counter(stages)
+
+    for i in range(1, N+1):
+        if stages[i] != 0:
+            failure[i-1] = stages[i] / num
+            num -= stages[i]
+
+    answer = []
+    num = len(failure)
+    for i, item in enumerate(failure):
+        m = item
+        idx = i
+        for j, _item in enumerate(failure[::-1]):
+            if _item >= m :
+                    m = _item
+                    idx = num -1 -j
+        answer.append(idx + 1)
+        failure[idx] = -1
+
+    return answer
