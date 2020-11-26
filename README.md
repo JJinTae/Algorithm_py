@@ -9,4 +9,5 @@ Level.1<br>
 [예산](https://github.com/JJinTae/Algorithm_py/tree/main/%EC%98%88%EC%82%B0)<br>
 [비밀지도](https://github.com/JJinTae/Algorithm_py/tree/main/%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84)<br>
 [문자열 다루기 기본](https://github.com/JJinTae/Algorithm_py/tree/main/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%8B%A4%EB%A3%A8%EA%B8%B0%20%EA%B8%B0%EB%B3%B8)<br>
-[실패율](https://github.com/JJinTae/Algorithm_py/tree/main/%EC%8B%A4%ED%8C%A8%EC%9C%A8)
+[실패율](https://github.com/JJinTae/Algorithm_py/tree/main/%EC%8B%A4%ED%8C%A8%EC%9C%A8)<br>
+[소수찾기](https://github.com/JJinTae/Algorithm_py/tree/main/%EC%86%8C%EC%88%98%20%EC%B0%BE%EA%B8%B0)
