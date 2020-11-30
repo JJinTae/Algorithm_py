@@ -13,3 +13,4 @@ Level.1<br>
 [실패율](https://github.com/JJinTae/Algorithm_py/tree/main/Level1/%EC%8B%A4%ED%8C%A8%EC%9C%A8)<br>
 [소수찾기](https://github.com/JJinTae/Algorithm_py/tree/main/Level1/%EC%86%8C%EC%88%98%20%EC%B0%BE%EA%B8%B0)<br>
 [2016년](https://github.com/JJinTae/Algorithm_py/tree/main/Level1/2016%EB%85%84)<br>
+[두 정수 사이의 합](https://github.com/JJinTae/Algorithm_py/tree/main/Level1/%EB%91%90%20%EC%A0%95%EC%88%98%20%EC%82%AC%EC%9D%B4%EC%9D%98%20%ED%95%A9)<br>
